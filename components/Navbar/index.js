@@ -43,7 +43,7 @@ export default function Navbar(props) {
       navLi3.addEventListener('click', () => {
         dDown.classList.add('hidden');
         ddClose.classList.add('hidden');
-      })
+      })  
 
       burger.addEventListener('click', () => {
         dDown.classList.remove('hidden');
