@@ -80,7 +80,7 @@ export default function Home() {
         ]}></Card>
       </div> 
       <Contact></Contact>
-      <button onClick={() => backToTop()} className='hidden fixed bottom-20 left-20 z-40 h-10 bg-primary text-fourth px-6 rounded-xl font-ubuntu font-semibold hover:bg-secondary group transition-all' id='backToTop'>Back to top <i class="fa-solid fa-arrow-up ml-2 group-hover:-translate-y-1 transition-all"></i></button>
+      <button onClick={() => backToTop()} className='hidden fixed bottom-40 left-20 z-40 h-10 bg-primary text-fourth px-6 rounded-xl font-ubuntu font-semibold hover:bg-secondary group transition-all animate-ping' id='backToTop'>Back to top <i class="fa-solid fa-arrow-up ml-2 group-hover:-translate-y-1 transition-all"></i></button>
     </Layout>
   )
 }
