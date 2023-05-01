@@ -2,8 +2,10 @@ import Layout from '../components/Layout';
 import Cta from '@/components/Cta';
 import Card from '@/components/Card';
 import Contact from '@/components/Contact';
+import { useRef } from 'react';
 
 export default function Home() {
+  const button = useRef(null);
   const goToProject = (ref) => {
     window.scrollTo({
       top: 600,
@@ -16,11 +18,16 @@ export default function Home() {
     // during server evaluation
   } else{
     const title = document.title
+    const btt = document.getElementById('backToTop');
 
     window.addEventListener('scroll', () => {
       var value = window.scrollY;
       
-      
+      if(value > 1200){
+        btt.classList.remove('hidden')
+      }else{
+        btt.classList.add('hidden')
+      }
     });
     window.addEventListener('blur', () => {
       document.title = 'Come here please'
@@ -65,6 +72,7 @@ export default function Home() {
         ]}></Card>
       </div> 
       <Contact></Contact>
+      <button className='hidden fixed bottom-20 left-20 z-40 h-10 bg-primary text-fourth px-6 rounded-xl font-ubuntu font-semibold hover:bg-secondary group transition-all' id='backToTop'>Back to top <i class="fa-solid fa-arrow-up ml-2 group-hover:-translate-y-1 transition-all"></i></button>
     </Layout>
   )
 }

@@ -14,7 +14,6 @@ export default function Navbar(props) {
       const navLi1 = document.querySelectorAll('#dropdown a')[0];
       const navLi2 = document.querySelectorAll('#dropdown a')[1];
       const navLi3 = document.querySelectorAll('#dropdown a')[2];
-      const navLi4 = document.querySelectorAll('#dropdown a')[3];
       const navBar = document.getElementById('navbar');
       
     window.addEventListener('scroll', () => {
@@ -42,10 +41,6 @@ export default function Navbar(props) {
         ddClose.classList.add('hidden');
       })
       navLi3.addEventListener('click', () => {
-        dDown.classList.add('hidden');
-        ddClose.classList.add('hidden');
-      })
-      navLi4.addEventListener('click', () => {
         dDown.classList.add('hidden');
         ddClose.classList.add('hidden');
       })
@@ -80,8 +75,8 @@ export default function Navbar(props) {
           <button className="relative px-2 rounded h-7 bg-transparent cursor-pointer block peer/draft md:hidden hover:bg-black hover:bg-opacity-20 transition-all" id="burger">
             <i class="fa-solid fa-bars"></i>
           </button>
-          <button className='absolute h-[100vh] w-[100vw] cursor-default bg-opacity-0 bg-black backdrop-blur-none top-0 right-0 md:hidden peer-focus/draft:bg-opacity-20 peer-focus/draft:backdrop-blur-sm transition-all hidden' id='ddCloser'></button>
-          <div className='absolute bg-white text-slate-700 text-sm rounded w-52 shadow-md right-10 top-16 hidden md:hidden' id='dropdown'>
+          <button className='absolute h-[100vh] w-[100vw] cursor-default bg-opacity-0 bg-black backdrop-blur-none top-0 right-0 md:hidden peer-focus/draft:bg-opacity-20 peer-focus/draft:backdrop-blur-sm transition-all z-50 hidden' id='ddCloser'></button>
+          <div className='absolute bg-white text-slate-700 text-sm rounded w-52 shadow-md right-10 top-16 hidden md:hidden z-50' id='dropdown'>
             <ul className=' my-3 cursor-pointer'>
                 {links.map((link) => {
                   return(

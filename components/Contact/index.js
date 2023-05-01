@@ -15,6 +15,7 @@ export default function Contact() {
                 <a className='mx-4 text-fourth px-4 py-[13px] text-lg hover:shadow-[0_12px_12px_0_rgb(0,0,0,0.4)] bg-primary rounded-full hover:bg-fourth hover:text-primary transition-all' href='mailto:trahmadisyawal@gmail.com'><i class="fa-regular fa-envelope"></i></a>
                 <a className='mx-4 text-fourth px-4 py-[13px] text-lg hover:shadow-[0_12px_12px_0_rgb(0,0,0,0.4)] bg-primary rounded-full hover:bg-fourth hover:text-primary transition-all' href='https://www.youtube.com/channel/UCjAXAchLJdboa9e85sXgHRQ'><i class="fa-brands fa-youtube"></i></a>
                 <a className='mx-4 text-fourth px-4 py-[13px] text-lg hover:shadow-[0_12px_12px_0_rgb(0,0,0,0.4)] bg-primary rounded-full hover:bg-fourth hover:text-primary transition-all' href='https://wa.me/6295337277773'><i class="fa-brands fa-whatsapp"></i></a>
+                <a className='mx-4 text-fourth px-4 py-[13px] text-lg hover:shadow-[0_12px_12px_0_rgb(0,0,0,0.4)] bg-primary rounded-full hover:bg-fourth hover:text-primary transition-all' href='https://github.com/THRG1170/'><i class="fa-brands fa-github"></i></a>
             </div>
         </div>
     </div>

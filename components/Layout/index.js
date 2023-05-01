@@ -22,10 +22,6 @@ export default function layout(props) {
           lRoute: '#project'
         },
         {
-          lText: 'About',
-          lRoute: '#about'
-        },
-        {
           lText: 'Contact',
           lRoute: '/contact'
         },
