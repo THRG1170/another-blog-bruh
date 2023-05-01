@@ -14,6 +14,14 @@ export default function Home() {
     })
   }
 
+  const backToTop = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth',
+    })
+  }
+
   if (typeof document === 'undefined') {
     // during server evaluation
   } else{
@@ -72,7 +80,7 @@ export default function Home() {
         ]}></Card>
       </div> 
       <Contact></Contact>
-      <button className='hidden fixed bottom-20 left-20 z-40 h-10 bg-primary text-fourth px-6 rounded-xl font-ubuntu font-semibold hover:bg-secondary group transition-all' id='backToTop'>Back to top <i class="fa-solid fa-arrow-up ml-2 group-hover:-translate-y-1 transition-all"></i></button>
+      <button onClick={() => backToTop()} className='hidden fixed bottom-20 left-20 z-40 h-10 bg-primary text-fourth px-6 rounded-xl font-ubuntu font-semibold hover:bg-secondary group transition-all' id='backToTop'>Back to top <i class="fa-solid fa-arrow-up ml-2 group-hover:-translate-y-1 transition-all"></i></button>
     </Layout>
   )
 }
