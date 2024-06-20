@@ -54,10 +54,10 @@ export default function Home() {
         </h1>
         <div className="flex border-b-[0.2px] opacity-50 my-8"></div>
         <p className=" mb-10">
-          I'm a intermediate web developer passionate about creating engaging
-          online experiences. <br /> My portfolio showcases projects where I've
-          used HTML, CSS, and JavaScript <br /> to build simpleweb pages with
-          clean and intuitive design. <br />{" "}
+          I'm a advanced web developer passionate about creating engaging online
+          experiences. <br /> My portfolio showcases projects where I've used
+          HTML, CSS, and JavaScript <br /> to build simpleweb pages with clean
+          and intuitive design. <br />{" "}
           <span className="font-semibold text-base text-fourth">
             Let's collaborate to bring your online presence to life.
           </span>{" "}
@@ -93,6 +93,7 @@ export default function Home() {
           ]}
         ></Card>
       </div>
+      >>>>>>> ea1e500edf05e3e799e8af1daf736eec7b722450
       <Contact></Contact>
       <button
         onClick={() => backToTop()}
