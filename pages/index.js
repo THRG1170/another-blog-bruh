@@ -51,7 +51,7 @@ export default function Home() {
         <h1 className='font-thin text-sm'>PORTOFOLIO</h1>
         <h1 className='font-extrabold text-5xl' id='project'>Project</h1>
         <div className='flex border-b-[0.2px] opacity-50 my-8'></div>
-        <p className=' mb-10'>I'm a beginner web developer passionate about creating engaging online experiences. <br /> My portfolio showcases projects where I've used HTML, CSS, and JavaScript <br /> to build simpleweb pages with clean and intuitive design. <br /> <span className='font-semibold text-base text-fourth'>Let's collaborate to bring your online presence to life.</span> </p>
+        <p className=' mb-10'>I'm a advanced web developer passionate about creating engaging online experiences. <br /> My portfolio showcases projects where I've used HTML, CSS, and JavaScript <br /> to build simpleweb pages with clean and intuitive design. <br /> <span className='font-semibold text-base text-fourth'>Let's collaborate to bring your online presence to life.</span> </p>
         <Card cards={[
           {
             image: '/images/first.jpeg',
